@@ -1,0 +1,567 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slider.scss">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Athena Hotels & Resorts</title>
+
+    <style>
+        section {
+            background: url(img/tree.jpg);
+             background-size: cover;
+             background-position: center;
+             box-shadow:inset 0 0 0 2000px rgba(3, 184, 255, 0.767);
+             min-height: 800px;
+        }
+
+        footer {
+            min-height: 500px;
+        }
+
+        .swing {
+            background: url(img/swing.jpg);
+             background-size: cover;
+             background-position: center;
+             box-shadow:inset 0 0 0 2000px rgba(11, 255, 3, 0.37);
+             min-height: 800px;
+    
+        }
+
+        .snorkel {
+            background: url(img/snorkel.jpg);
+             background-size: cover;
+             background-position: center;
+             box-shadow:inset 0 0 0 2000px rgba(3, 184, 255, 0.767);
+             min-height: 800px;
+        
+        }
+
+        .map {
+            background: url(img/map.jpg);
+             background-size: cover;
+             background-position: center;
+             box-shadow:inset 0 0 0 2000px rgba(255, 167, 3, 0.753);
+             min-height: 1100px;
+
+        }
+
+        .satisfy {
+            font-family: Satisfy;
+        }
+
+        .p1 {
+            margin: 60px;
+
+        }
+
+        .nav-wrapper {
+            opacity: 0.9;
+        }
+
+        .brand-logo, .head {
+            font-family: Cinzel Decorative;
+        }
+
+        .li {
+            font-family: Italiana;
+        }
+
+        .li:hover, .side:hover {
+            cursor: pointer;
+            background-color: black;
+            color: gold;
+        }
+
+        .resort {
+            padding-top: 40px;
+        }
+
+        
+
+        
+
+
+
+        .dropdown-content {
+            width: 300px;
+        }
+
+        .mexico {
+            margin-top: 15px;
+        }
+
+        .playa {
+            margin-top: 35px;
+        }
+
+        .carousel-item {
+            height: 400px;
+        }
+
+        .card {
+            margin-top: 50px;
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper grey darken-3">
+                <div class="container">
+                    <a href="#" class="brand-logo yellow-text lighten-2">Athena</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="li"><a class="dropdown-trigger" href="#" data-target="dropdown1">Our Resorts<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li class="li"><a href="#">Our Brands</a></li>
+                        <li class="li"><a href="#">Special Offers</a></li>
+                        <li class="li"><a href="#">Celebrations</a></li>
+                        <li class="li"><a href="#">Groups</a></li>
+                        <li><a href="#" class="btn yellow lighten-2 black-text waves-effect waves-light offset-l2">Book Now</a></li>
+                    </ul>
+                    
+                    
+                    <ul id="dropdown1" class="dropdown-content yellow lighten-2">
+                        <div class="container">
+                            <li class="brand-logo mexico black-text">Mexico</li>
+                            <li><a href="#!" class="black-text playa">Athena Playa Del Carmen Adult Resort</a></li>
+                            <li><a href="#!" class="black-text">Athena Cancun</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!" class="black-text">Athena Puerto Vallarta</a></li>
+                        </div>
+                    </ul>
+
+                    <ul class="sidenav yellow lighten-2" id="mobile-menu">
+                        <li><a href="#">Our Resorts</a></li>
+                        <li><a href="#">Our Brands</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Celebrations</a></li>
+                        <li><a href="#">Groups</a></li>
+                      </ul>
+    
+                    
+                    
+    
+                </div>
+            </nav>
+
+        </div>
+        
+    </header>
+
+
+    <!-- Section 1 -->
+    <section class="section one">
+       
+        <h3 class="brand-logo center-align white-text">Prime Dreamscape Locations</h3>
+        <p class="p1 white-text">Highly strategic locations throughout Mexico for optimal view and experience.  A place 
+            of nonstop adventure and family-friendly fun.  We have pristine beaches, a blend of local culture and traditions,
+            gourmet restaurants and endless night adventures.  The pleasure never stops at Athena Hotel and Resorts.
+
+        </p>
+
+           
+
+        <div class="container">
+            <div class="slider">
+                <ul class="slides">
+                <li>
+                    <img src="img/aerial.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                    <h3>Playa Del Carmen</h3>
+                    <h5 class="light grey-text text-lighten-3">Crystal clear beaches</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/drapes.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                    <h3>Cancun</h3>
+                    <h5 class="light grey-text text-lighten-3">Endless comfort</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/hotel.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                    <h3>Puerto Vallarta</h3>
+                    <h5 class="light grey-text text-lighten-3">Sky high ocean views</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/night.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                    <h3>La Romana</h3>
+                    <h5 class="light grey-text text-lighten-3">Spectacular nights</h5>
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+        </div>
+                
+                
+                
+
+            
+    
+    </section>
+
+
+    <!-- Parallax 1 -->
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/taiwan.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+
+
+    <!-- Card Resort section -->
+    
+        <div class="swing">
+            
+        
+            
+
+            <div class="container resort row">
+                <h1 class="brand-logo center-align">Our Resorts</h1>
+                <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image">
+                    <img src="img/playa.jpg">
+                    <span class="card-title">Athena Playa Del Carmen</span>
+                    </div>
+                    <div class="card-content">
+                    <p>The famous white sand and crystal clear blue ocean water.</p>
+                    </div>
+                    <div class="card-action">
+                    <a href="#">Send me there!</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                    <div class="card-image">
+                        <img src="img/cancun.jpg" class="responsive-img">
+                        <span class="card-title">Athena Cancun</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Where the fun begins and the party never ends.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Send me there!</a>
+                    </div>
+                    </div>
+                </div>
+                
+    
+                
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                    <div class="card-image">
+                        <img src="img/vallarta.jpg">
+                        <span class="card-title">Athena Puerto Vallarta</span>
+                    </div>
+                    <div class="card-content">
+                        <p>The breathtaking mountains of Puerto Vallarta.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Send me there!</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="input-field center">
+                    <a class="waves-effect waves-light btn-large grey card darken-3 yellow-text text-lighten-2"><i class="material-icons right">arrow_forward</i>View All Resorts</a>
+
+                </div>
+
+            
+
+                
+            </div>
+
+        </div>
+
+
+        <!-- Card Adventure Section -->
+
+        <div class="snorkel">
+            
+        
+            
+
+            <div class="container resort row">
+                <h1 class="brand-logo center-align">Our Adventures</h1>
+                <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image">
+                    <img src="img/golf.jpg">
+                    <span class="card-title">Adventure Golf</span>
+                    </div>
+                    <div class="card-content">
+                    <p>Compete while enjoying the tropical backdrop!</p>
+                    </div>
+                    <div class="card-action">
+                    <a href="#">Send me there!</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                    <div class="card-image">
+                        <img src="img/scuba.jpg" class="responsive-img">
+                        <span class="card-title">Snorkeling</span>
+                    </div>
+                    <div class="card-content">
+                        <p>See the vast array of coral and marine life we have to offer.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Send me there!</a>
+                    </div>
+                    </div>
+                </div>
+                
+    
+                
+                <div class="col s12 m4 l4">
+                    <div class="card">
+                    <div class="card-image">
+                        <img src="img/sailing.jpg">
+                        <span class="card-title">Paradise Sailing</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Experience the pirate's adventure at deep sea!</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Send me there!</a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="input-field center">
+                    <a class="waves-effect waves-light btn-large card grey darken-3 yellow-text text-lighten-2"><i class="material-icons right">arrow_forward</i>View All Adventures</a>
+
+                </div>
+                
+
+            
+
+                
+            </div>
+
+        </div>
+
+
+        <!-- Parallax 2 -->
+
+        <div class="parallax-container parallaxTwo">
+            <div class="parallax">
+                <img src="img/birdseye.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+
+
+
+        <!-- About/Contact Section-->
+
+        <div class="map">
+            <div class="container resort">
+                <h1 class="brand-logo center-align">Get to Know Athena</h1>
+
+                <h4 class="center-align satisfy">It's time to discover what Athena is all about... and get the best deals.</h4>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <p class="flow-text">THE #1 RESORT IN MEXICO</p>
+                        <p>Our history goes back over 100 years.  We we're one of the first established tropical resorts 
+                            on the planet.  Strategically located across the nicest parts of the Yucatan Peninsula.  
+                        </p>
+
+                    </div>
+
+                    <div class="col s12 m4 l4 offset-l2 offset-m2">
+                        <p class="flow-text">SAVING IS EASY!</p>
+                        <p>Get the best prices on: 
+                            <br>
+                            -Hotels
+                            <br>
+                            -All-inclusive Resorts
+                            <br>
+                            -Tours and Activities
+                            <br>
+                            -Nightlife
+                            <br>
+                            -Restaurants
+                            <br>
+                            <br>
+                            
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <p class="flow-text">THINGS TO DO AND SEE</p>
+                        <p>There are so many fun things to do. The famous 5th avenue is a pedestrian walkway that runs through town and is lined with shops, restaurants, bars and palm trees with twinkly lights.
+
+                        <br>    Right off the coast, you will find the Meso-American Barrier Reef, the second longest coral reef in the world. It is a wonderland for snorkelers and scuba divers alike.
+                            
+                         <br>   Don't forget the fascinating Mayan archaeological sites. The people and the culture are sure to intrigue you.</p>
+                    </div>
+                    <div class="col s12 m4 l4 offset-l2 offset-m2">
+                        <p>
+                        We even have group packages available for corporate events, conventions, golf vacations and weddings in Playa del Carmen.
+
+                            <br>   Make sure your vacation in Playa del Carmen is filled with amazing memories, let our experienced team of American and Canadian travel experts who live in Playa del Carmen help.
+
+                            <br>    Ready for your vacation in paradise? Call us and lets get started. 1-888-537-9797.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p class="center-align">HAVE QUESTIONS?</p>
+                <div class="input-field center">
+                    <a href="#" class="btn-large orange waves-effect">Contact Us</a>
+
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+
+        <footer class="page-footer grey lighten-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m3 l3">
+                        <p class="flow-text head grey-text darken-1">Vacation Bookings</p>
+                        
+                        <ul>
+                            <li class="a grey-text darken-1">Hotels</li>
+                            <li class="a grey-text darken-1">All Inclusive Resorts</li>
+                            <li class="a grey-text darken-1">Luxury Resorts</li>
+                            <li class="a grey-text darken-1">Hot Deals</li>
+                            <li class="a grey-text darken-1">Tours & Excursions</li>
+                        </ul>
+                    
+                    </div>
+                    <div class="col s12 m3 l3">
+                        <p class="flow-text head grey-text darken-1">Groups</p>
+                        <ul>
+                            <li><a href="#" class="grey-text darken-1">Group Bookings</a></li>
+                            <li><a href="#" class="grey-text darken-1">Weddings</a></li>
+                            <li><a href="#" class="grey-text darken-1">Advertising</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m2 l2">
+                        <p class="flow-text head grey-text darken-1">Information</p>
+                        <ul>
+                            <li><a href="#" class="grey-text darken-1">General</a></li>
+                            <li><a href="#" class="grey-text darken-1">Our Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m2 l2 offset-l2 offset-m2">
+                        <p class="flow-text head grey-text darken-1">Company</p>
+                        <ul>
+                            <li><a href="#" class="grey-text darken-1">About Us</a></li>
+                            <li><a href="#" class="grey-text darken-1">Media</a></li>
+                            <li><a href="#" class="grey-text darken-1">We're Hiring!</a></li>
+                            <li><a href="#" class="grey-text darken-1">Contact Us</a></li>
+        
+                            <li><a href="#">
+                                <i class="fab fa-instagram"></i>
+                                <span class="grey-text darken-1">Instagram</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fab fa-facebook"></i>
+                                <span class="grey-text darken-1">Facebook</span>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fab fa-twitter"></i>
+                                <span class="grey-text darken-1">Twitter</span>
+                            </a></li>
+                        </ul>
+                    </div>
+
+                    
+
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                   
+                    <div class="col12 m3 l3 center-align">
+                        <p class="grey-text darken-1">Terms of Use | Privacy Policy | Copyright &copy; 2021 Athena.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        
+
+            
+            
+            
+        
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown();
+            $('.carousel').carousel({
+                dist: -150
+            });
+            $('.slider').slider();
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+</html>
